@@ -1,0 +1,45 @@
+{extend name="public:layouti" /}
+{block name="style"}{/block}
+{block name="main-container"}
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">店铺地址</a></li>
+    </ol>
+    <p>百度地图收索:海尔热水器厨房电器(郫县犀浦店)</p>
+    <div class="address" id="container" style="width: 1200px;height: 400px;"></div>
+</div>
+<div>
+
+</div>
+{/block}
+{block name="script"}
+
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=kPU2UIQc9LGMWl0VPBaiHD44QVmZjwIL"></script>
+<script type="text/javascript">
+    var map = new BMapGL.Map("container");
+    // 创建地图实例
+    var point = new BMapGL.Point(103.966379,30.758219);
+
+    // map.setCenter(point);
+
+    // 创建点坐标
+    map.centerAndZoom(point, 20);
+
+    // 初始化地图，设置中心点坐标和地图级别
+    var opts = {
+        width: 250,     // 信息窗口宽度
+        height: 100,    // 信息窗口高度
+        title: "海尔热水器厨房电器(郫县犀浦店)"  // 信息窗口标题
+    }
+
+    var infoWindow = new BMapGL.InfoWindow(
+        "地址：成都市郫都区围城南路与恒山南街交叉路口西北侧(阳光雅舍)" +
+        "<br>"+"电话：<a href=\"tel:18280235063\">18280235063</a>" +"</br>"
+        +"<a href='http://api.map.baidu.com/geocoder?address=海尔热水器厨房电器(郫县犀浦店)&output=html' target='_blank'>\n" +
+        " 到这里去" +
+        "</a>", opts);  // 创建信息窗口对象
+        map.openInfoWindow(infoWindow, map.getCenter());        // 打开信息窗口
+</script>
+
+{/block}

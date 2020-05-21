@@ -62,6 +62,8 @@ class Config
             '__ADMIN_JS__'  => PUBLIC_PATH. 'static/admin/js',
             // 后台IMG目录
             '__ADMIN_IMG__' => PUBLIC_PATH. 'static/admin/img',
+            // 前台Home目录
+            '__HOME__'=> PUBLIC_PATH.'static/home',
             // 前台CSS目录
             '__HOME_CSS__'  => PUBLIC_PATH. 'static/home/css',
             // 前台JS目录

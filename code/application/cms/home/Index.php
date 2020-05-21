@@ -9,19 +9,42 @@
 
 namespace app\cms\home;
 
+use think\App;
+use think\console\Input;
+use think\Db;
+
 /**
  * 前台首页控制器
  * @package app\cms\admin
  */
 class Index extends Common
 {
-    /**
-     * 首页
-     * @author 蔡伟明 <314013107@qq.com>
-     * @return mixed
-     */
+
     public function index()
     {
         return $this->fetch(); // 渲染模板
+    }
+    //搜索产品
+    public function search (){
+        $keyw =input('keyw');
+        $data = Db::view('dp_cms_document', true)
+            ->view('dp_cms_document_products', '*', 'dp_cms_document.id=' . 'dp_cms_document_products' . '.aid', 'right')
+            ->where(['dp_cms_document.status'=>1],['dp_cms_document_products.product_name','like',"%$keyw%"])
+            ->order('update_time', 'desc')
+            ->paginate(4);
+//
+        $this->assign('lists',$data);
+        $this->assign('keyword',$keyw);
+
+        return $this->fetch('search/searchp');
+
+
+    }
+    //店铺地址
+    public function address (){
+
+
+        return $this->fetch('index/address');
+
     }
 }

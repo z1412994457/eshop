@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="__HOME__/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css" />
+    {block name="style"}{/block}
+
+</head>
+<body>
+{block name="page-container"}
+<!--页头-->
+<div class="header">
+<ul class="nav nav-pills">
+    <li role="presentation" ><a href="{:url('/cms/Index/index')}">首页</a></li>
+    <li role="presentation"><a href="#">橱柜</a></li>
+    <li role="presentation"><a href="{:url('/cms/Products/products')}">产品中心</a></li>
+    <li role="presentation"><a href="{:url('/cms/index/address')}">店铺地址</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+    <li role="presentation">
+        <form action="{:url('/cms/Index/search')}" method="post"    >
+            <div class="col-lg-4">
+                <div class="input-group">
+                    <input type="text"  value="" class="form-control" name="keyw" placeholder="搜素">
+                    <span class="input-group-btn">
+                        <input class="btn btn-default" type="submit" value="搜索">
+      </span>
+                </div><!-- /input-group -->
+            </div>
+
+        </form>
+    </li>
+
+
+</ul>
+</div>
+<div class="page-header" style="background: url('__HOME_IMG__/2.jpg') no-repeat; background-size: cover;height: 300px">
+</div>
+<!--内容-->
+
+{block name="main-container"}
+{/block}
+
+<!--页脚-->
+<div class="jumbotron footer">
+    <p>商业合作</p>
+    <p></p>
+</div>
+{/block}
+
+</body>
+<script src="__HOME_JS__/jquery-3.4.1/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+{block name="script"}{/block}
+
+</html>
