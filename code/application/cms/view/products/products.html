@@ -1,10 +1,10 @@
 {extend name="public:layouti" /}
 {block name="style"}{/block}
 {block name="main-container"}
-<div class="container">
+
 
     <ol class="breadcrumb">
-        <li><a href="#">首页</a></li>
+        <li><a href="/cms/Index/index">首页</a></li>
         <li><a href="#">产品中心</a></li>
 
     </ol>
@@ -26,6 +26,6 @@
         {/volist}
     </div>
 
-</div>
+
 <div style="text-align: center">{$products->render() |raw}</div>
 {/block}
