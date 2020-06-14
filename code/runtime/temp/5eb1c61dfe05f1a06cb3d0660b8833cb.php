@@ -1,4 +1,4 @@
-<?php /*a:2:{s:66:"G:\php_document\1shop\code\application\cms\view\index\address.html";i:1592018853;s:67:"G:\php_document\1shop\code\application\cms\view\public\layouti.html";i:1592026531;}*/ ?>
+<?php /*a:2:{s:70:"G:\php_document\1shop\code\application\cms\view\products\cupboard.html";i:1592020649;s:67:"G:\php_document\1shop\code\application\cms\view\public\layouti.html";i:1592019173;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +14,23 @@
         margin-top: 2%;
         background-color: white;
     }
+
+    .a-filter {
+        border-left: 4px solid #005aaa;
+    }
+    .navbar-header>p{
+        display: none;
+    }
+    @media screen and (max-width: 768px){
+        .navbar-header>p{
+            margin: 14px 20px 0 0;
+            float: right;
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+        }
+    }
+
 </style>
 
     <style>
@@ -46,17 +63,6 @@
             bottom: 50%;
             position: absolute;
             display: none;
-
-        }
-
-        @media  screen and (max-width: 991px){
-            .show-erweima {
-                bottom: 50%;
-                position: absolute;
-                display: none;
-                width:50%;
-                left: 25%;
-            }
         }
 
         .footer {
@@ -149,14 +155,67 @@
         <div class="row">
             <ol class="breadcrumb">
                 <li><a href="/cms/Index/index">首页</a></li>
-                <li><a href="#">店铺地址</a></li>
+                <li><a href="#">橱柜</a></li>
             </ol>
         </div>
     </div>
 </div>
-<!--百度地图-->
-<div class="address jumbotron" id="container" style="width: 100%; height: 500px"></div>
+<!--橱柜规格筛选-->
+<div class="srceen">
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                            <span class="glyphicon glyphicon-filter"></span>
+                        </button>
+                        <a class="navbar-brand a-filter" href="javascript:void(0)">
+                            <h3 style="margin: 0 0 0 0;color: black">橱柜</h3>
+                        </a>
+                        <p>筛选</p>
+                    </div>
 
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                        <ul class="nav navbar-nav">
+                            <li><a href="<?php echo url('/cms/Products/cupboard/cupboard_type/石材橱柜'); ?>">石材橱柜</a></li>
+                            <li><a href="<?php echo url('/cms/Products/cupboard/cupboard_type/砖夹橱柜'); ?>">砖夹橱柜</a></li>
+                            <li><a href="<?php echo url('/cms/Products/cupboard/cupboard_type/多层木板橱柜'); ?>">多层木板橱柜</a></li>
+                        </ul>
+
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+
+        </div>
+    </div>
+</div>
+<!--橱柜列表-->
+<div class="cupboard_lists">
+    <div class="container">
+        <div class="row">
+            <?php if(is_array($cupboard) || $cupboard instanceof \think\Collection || $cupboard instanceof \think\Paginator): $i = 0; $__LIST__ = $cupboard;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$c): $mod = ($i % 2 );++$i;?>
+            <div class="col-xs-6 col-md-3">
+                <a href="/cms/Products/cupboard_details/id/<?php echo htmlentities($c['id']); ?>">
+                    <div class="thumbnail">
+                        <img src="<?php echo get_file_path($c['cupboard_img']); ?>" class="img-responsive" alt="Responsive image">
+                        <div class="caption">
+                            <h3><?php echo htmlentities($c['cupboard_name']); ?></h3>
+                            <p style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;"><?php echo htmlentities($c['cupboard_description']); ?></p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <?php endforeach; endif; else: echo "" ;endif; ?>
+        </div>
+    </div>
+</div>
+<!--分页-->
+<div style="text-align: center"><?php echo $cupboard->render(); ?></div>
 
 <!--右侧联系栏-->
 <div class="nav-connection">
@@ -190,7 +249,7 @@
                 <div class="show-erweima"><img src="/static/home/img/erweima.jpg" class="img-responsive"
                                                alt="Responsive image"/></div>
                 <h6>关注我们</h6>
-                <a href="##" class="erweima "><img src="/static/home/img/wei.png"/></a>
+                <a href="##" class="erweima"><img src="/static/home/img/wei.png"/></a>
             </div>
             <div class="col-md-3">
                 <h6>店铺地址</h6>
@@ -228,30 +287,9 @@
     });
 </script>
 
+<script>
 
-<script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=kPU2UIQc9LGMWl0VPBaiHD44QVmZjwIL"></script>
-<script type="text/javascript">
-    var map = new BMapGL.Map("container");
-    // 创建地图实例
-    var point = new BMapGL.Point(103.966379,30.758219);
-
-    // map.setCenter(point);
-
-    // 创建点坐标
-    map.centerAndZoom(point, 20);
-    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
-    // 初始化地图，设置中心点坐标和地图级别
-    var opts = {
-        width: 250,     // 信息窗口宽度
-        height: 100,    // 信息窗口高度
-        title: "海尔热水器厨房电器(郫县犀浦店)"  // 信息窗口标题
-    }
-
-    var infoWindow = new BMapGL.InfoWindow(
-        "地址：成都市郫都区围城南路与恒山南街交叉路口西北侧(阳光雅舍)" , opts);  // 创建信息窗口对象
-        map.openInfoWindow(infoWindow, map.getCenter());        // 打开信息窗口
 </script>
-
 
 
 </html>

@@ -1,0 +1,2538 @@
+---------------------------------------------------------------
+
+[2020-05-26T14:01:00+08:00] 127.0.0.1 GET eshop.com/admin
+[运行时间：0.645961s] [吞吐率：1.55req/s] [内存消耗：1,593.19kb] [文件加载：71]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2020-05-26T14:01:03+08:00] 127.0.0.1 GET eshop.com/admin.php/admin
+[运行时间：2.971132s] [吞吐率：0.34req/s] [内存消耗：3,674.84kb] [文件加载：122]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590041000,1590134868,1590214444,1590304257',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\admin\view\index\index.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => '_message',
+  8 => '_icons',
+  9 => 'aside',
+  10 => 'default_pass',
+) ]
+[ info ] [ VIEW ] G:\php_document\1shop\code\plugins/SystemInfo/view/widget.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => '_message',
+  8 => '_icons',
+  9 => 'aside',
+  10 => 'default_pass',
+  11 => 'display',
+  12 => 'width',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\php_document\1shop\code\plugins/DevTeam/view/widget.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => '_message',
+  8 => '_icons',
+  9 => 'aside',
+  10 => 'default_pass',
+  11 => 'display',
+  12 => 'width',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002694s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.180509s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.002325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.011490s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.021090s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.023235s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.001033s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.011794s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.011782s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_user` [ RunTime:0.052731s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.018349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.026495s ]
+[ sql ] [ SQL ] SELECT `name` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.031094s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = in [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY `sort`,`id` [ RunTime:0.017630s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY `sort`,`id` [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/index/index' LIMIT 1 [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value`,`params` FROM `dp_admin_menu` [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1 ORDER BY `sort`,`id` [ RunTime:0.001444s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/index/index' LIMIT 1 [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value`,`params` FROM `dp_admin_menu` [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_message` [ RunTime:0.014192s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dp_admin_message` WHERE  `status` = 0  AND `uid_receive` = 1 [ RunTime:0.013937s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_icon` [ RunTime:0.025241s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_icon` WHERE  `status` = 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT `value` FROM `dp_admin_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT `password` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.048187s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.013890s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT `config` FROM `dp_admin_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.000604s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001126s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] select version() as version [ RunTime:0.016629s ]
+[ sql ] [ SQL ] SELECT `config` FROM `dp_admin_plugin` WHERE  `name` = 'DevTeam' LIMIT 1 [ RunTime:0.000585s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:01:04+08:00] 127.0.0.1 GET eshop.com/admin.php/admin/index/checkupdate.html
+[运行时间：0.552262s] [吞吐率：1.81req/s] [内存消耗：3,175.03kb] [文件加载：102]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590041000,1590134868,1590214444,1590304257; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://eshop.com/admin.php/admin',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001108s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.022949s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.011919s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.012856s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.011730s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.010631s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.012311s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.013028s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = in [ RunTime:0.000642s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011694s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] select version() as version [ RunTime:0.000295s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:01:12+08:00] 127.0.0.1 POST eshop.com/admin.php/admin/ajax/getsidebarmenu.html
+[运行时间：0.240018s] [吞吐率：4.17req/s] [内存消耗：3,223.45kb] [文件加载：105]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590472865',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://eshop.com/admin.php/admin',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://eshop.com',
+  'accept' => '*/*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+  'module_id' => '4',
+  'module' => 'admin',
+  'controller' => 'system',
+)
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000880s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.016226s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.008750s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.008669s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.008663s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008863s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.011205s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.009011s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = in [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value`,`params` FROM `dp_admin_menu` [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1 ORDER BY `sort`,`id` [ RunTime:0.001425s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:01:13+08:00] 127.0.0.1 GET eshop.com/admin.php/admin/system/index.html
+[运行时间：0.914241s] [吞吐率：1.09req/s] [内存消耗：4,054.47kb] [文件加载：114]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590472865',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://eshop.com/admin.php/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\common/builder/form/layout.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => '_message',
+  8 => '_icons',
+  9 => 'aside',
+  10 => 'page_title',
+  11 => 'page_tips',
+  12 => 'tips_type',
+  13 => 'btn_hide',
+  14 => 'btn_title',
+  15 => 'form_items',
+  16 => 'tab_nav',
+  17 => 'post_url',
+  18 => 'form_data',
+  19 => 'extra_html',
+  20 => 'extra_js',
+  21 => 'extra_css',
+  22 => 'ajax_submit',
+  23 => 'hide_header',
+  24 => 'header_title',
+  25 => 'js_list',
+  26 => 'css_list',
+  27 => 'field_triggers',
+  28 => 'field_hide',
+  29 => 'field_values',
+  30 => 'field_clear',
+  31 => '_js_files',
+  32 => '_js_init',
+  33 => '_css_files',
+  34 => '_layout',
+  35 => 'btn_extra',
+  36 => 'submit_confirm',
+  37 => 'extend_js_list',
+  38 => 'extend_css_list',
+  39 => '_method',
+  40 => 'empty_tips',
+  41 => '_token_name',
+  42 => '_token_value',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000868s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.012579s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.015376s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.010299s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.013767s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008486s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.009130s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.008647s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = in [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY `sort`,`id` [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY `sort`,`id` [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/system/index' LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value`,`params` FROM `dp_admin_menu` [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1 ORDER BY `sort`,`id` [ RunTime:0.001331s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/system/index' LIMIT 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value`,`params` FROM `dp_admin_menu` [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_message` [ RunTime:0.008974s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dp_admin_message` WHERE  `status` = 0  AND `uid_receive` = 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_icon` [ RunTime:0.008497s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_icon` WHERE  `status` = 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT `value` FROM `dp_admin_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT `name`,`config`,`title` FROM `dp_admin_module` WHERE  `config` <> ''  AND `status` = 1 [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`type`,`value`,`options`,`tips`,`ajax_url`,`next_items`,`param`,`format`,`table`,`level`,`key`,`option`,`pid`,`ak`,`create_time`,`update_time`,`sort`,`status` FROM `dp_admin_config` WHERE  `group` = 'base'  AND `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_user` [ RunTime:0.011815s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.011892s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000343s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:11:04+08:00] 127.0.0.1 GET eshop.com/
+[运行时间：0.181914s] [吞吐率：5.50req/s] [内存消耗：3,027.45kb] [文件加载：101]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590472874',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012983s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.011497s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.008688s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.008506s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.008843s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.009130s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000446s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:11:05+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.527454s] [吞吐率：1.90req/s] [内存消耗：3,259.07kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590472874',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000942s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.019784s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.009768s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.010177s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.009046s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008408s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.045149s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.021953s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.119554s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.035528s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.034500s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.016242s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000569s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:13:31+08:00] 127.0.0.1 GET eshop.com/admin
+[运行时间：0.051096s] [吞吐率：19.57req/s] [内存消耗：1,593.20kb] [文件加载：71]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+
+[2020-05-26T14:13:31+08:00] 127.0.0.1 GET eshop.com/admin.php/admin
+[运行时间：0.390711s] [吞吐率：2.56req/s] [内存消耗：3,431.66kb] [文件加载：118]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590473466',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\admin\view\index\index.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => '_message',
+  8 => '_icons',
+  9 => 'aside',
+  10 => 'default_pass',
+) ]
+[ info ] [ VIEW ] G:\php_document\1shop\code\plugins/SystemInfo/view/widget.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => '_message',
+  8 => '_icons',
+  9 => 'aside',
+  10 => 'default_pass',
+  11 => 'display',
+  12 => 'width',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\php_document\1shop\code\plugins/DevTeam/view/widget.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => '_message',
+  8 => '_icons',
+  9 => 'aside',
+  10 => 'default_pass',
+  11 => 'display',
+  12 => 'width',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000866s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.010699s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.013541s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.016487s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.009347s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.009392s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.009107s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.009772s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = in [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY `sort`,`id` [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY `sort`,`id` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/index/index' LIMIT 1 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value`,`params` FROM `dp_admin_menu` [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1 ORDER BY `sort`,`id` [ RunTime:0.002421s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/index/index' LIMIT 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value`,`params` FROM `dp_admin_menu` [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_message` [ RunTime:0.009557s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dp_admin_message` WHERE  `status` = 0  AND `uid_receive` = 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_icon` [ RunTime:0.018281s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_icon` WHERE  `status` = 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT `value` FROM `dp_admin_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_user` [ RunTime:0.008683s ]
+[ sql ] [ SQL ] SELECT `password` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.011342s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT `config` FROM `dp_admin_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.000565s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000847s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] select version() as version [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT `config` FROM `dp_admin_plugin` WHERE  `name` = 'DevTeam' LIMIT 1 [ RunTime:0.000582s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:13:32+08:00] 127.0.0.1 GET eshop.com/admin.php/admin/index/checkupdate.html
+[运行时间：0.578451s] [吞吐率：1.73req/s] [内存消耗：3,175.16kb] [文件加载：102]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590473466',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://eshop.com/admin.php/admin',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000860s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.011388s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.010875s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.001521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.011563s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.008911s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.030865s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.001612s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.013984s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.011492s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = in [ RunTime:0.000436s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000905s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] select version() as version [ RunTime:0.000265s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:13:34+08:00] 127.0.0.1 POST eshop.com/admin.php/admin/ajax/getsidebarmenu.html
+[运行时间：0.140388s] [吞吐率：7.12req/s] [内存消耗：3,223.55kb] [文件加载：105]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590473613',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://eshop.com/admin.php/admin',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://eshop.com',
+  'accept' => '*/*',
+  'content-length' => '41',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+  'module_id' => '68',
+  'module' => 'user',
+  'controller' => 'index',
+)
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001113s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.011196s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.008723s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.008973s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.009005s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008410s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.008643s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.008420s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = in [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value`,`params` FROM `dp_admin_menu` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1 ORDER BY `sort`,`id` [ RunTime:0.001279s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:13:35+08:00] 127.0.0.1 GET eshop.com/admin.php/user/index/index.html
+[运行时间：0.470070s] [吞吐率：2.13req/s] [内存消耗：4,175.56kb] [文件加载：118]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590473613',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://eshop.com/admin.php/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\common/builder/table/layout.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => '_message',
+  8 => '_icons',
+  9 => 'aside',
+  10 => 'page_title',
+  11 => 'page_tips',
+  12 => 'tips_type',
+  13 => 'tab_nav',
+  14 => 'hide_checkbox',
+  15 => 'extra_html',
+  16 => 'extra_js',
+  17 => 'extra_css',
+  18 => 'order_columns',
+  19 => 'filter_columns',
+  20 => 'filter_map',
+  21 => '_field_display',
+  22 => '_filter_content',
+  23 => '_filter',
+  24 => 'top_buttons',
+  25 => 'right_buttons',
+  26 => 'search',
+  27 => 'search_button',
+  28 => 'columns',
+  29 => 'pages',
+  30 => 'row_list',
+  31 => '_page_info',
+  32 => 'primary_key',
+  33 => '_table',
+  34 => 'js_list',
+  35 => 'css_list',
+  36 => 'validate',
+  37 => '_js_files',
+  38 => '_css_files',
+  39 => '_select_list',
+  40 => '_filter_time',
+  41 => 'empty_tips',
+  42 => '_search_area',
+  43 => '_search_area_url',
+  44 => '_search_area_op',
+  45 => 'builder_height',
+  46 => 'fixed_right_column',
+  47 => 'fixed_left_column',
+  48 => 'column_width',
+  49 => 'column_hide',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000827s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.010409s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.008662s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.009425s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.008490s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.012128s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.011054s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.008611s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = in [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY `sort`,`id` [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY `sort`,`id` [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'user/index/index' LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value`,`params` FROM `dp_admin_menu` [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1 ORDER BY `sort`,`id` [ RunTime:0.001468s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'user/index/index' LIMIT 1 [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value`,`params` FROM `dp_admin_menu` [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_message` [ RunTime:0.009030s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dp_admin_message` WHERE  `status` = 0  AND `uid_receive` = 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_icon` [ RunTime:0.008993s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_icon` WHERE  `status` = 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT `value` FROM `dp_admin_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_user` [ RunTime:0.009588s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dp_admin_user` [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_user` ORDER BY `sort`,`role`,`id` DESC LIMIT 0,20 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name` FROM `dp_admin_role` WHERE  `status` = 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT `pid` FROM `dp_admin_role` WHERE  `status` = 1 ORDER BY `pid` LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_menu` WHERE  `url_value` = 'user/index/add' LIMIT 1 [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_menu` WHERE  `url_value` = 'user/index/enable' LIMIT 1 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_menu` WHERE  `url_value` = 'user/index/disable' LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_menu` WHERE  `url_value` = 'user/index/delete' LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_menu` WHERE  `url_value` = 'user/index/edit' LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_menu` WHERE  `url_value` = 'user/index/delete' LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.011017s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000435s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:13:51+08:00] 127.0.0.1 POST eshop.com/admin.php/admin/ajax/getsidebarmenu.html
+[运行时间：0.143377s] [吞吐率：6.97req/s] [内存消耗：3,224.41kb] [文件加载：105]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590473615',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://eshop.com/admin.php/user/index/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://eshop.com',
+  'accept' => '*/*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+  'module_id' => '4',
+  'module' => 'admin',
+  'controller' => 'system',
+)
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000825s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.011833s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.012572s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.008577s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.008035s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008685s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.009190s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.008127s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = in [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value`,`params` FROM `dp_admin_menu` [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1 ORDER BY `sort`,`id` [ RunTime:0.001439s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:13:52+08:00] 127.0.0.1 GET eshop.com/admin.php/admin/system/index.html
+[运行时间：0.258107s] [吞吐率：3.87req/s] [内存消耗：3,722.04kb] [文件加载：112]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590473615',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://eshop.com/admin.php/user/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\common/builder/form/layout.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => '_message',
+  8 => '_icons',
+  9 => 'aside',
+  10 => 'page_title',
+  11 => 'page_tips',
+  12 => 'tips_type',
+  13 => 'btn_hide',
+  14 => 'btn_title',
+  15 => 'form_items',
+  16 => 'tab_nav',
+  17 => 'post_url',
+  18 => 'form_data',
+  19 => 'extra_html',
+  20 => 'extra_js',
+  21 => 'extra_css',
+  22 => 'ajax_submit',
+  23 => 'hide_header',
+  24 => 'header_title',
+  25 => 'js_list',
+  26 => 'css_list',
+  27 => 'field_triggers',
+  28 => 'field_hide',
+  29 => 'field_values',
+  30 => 'field_clear',
+  31 => '_js_files',
+  32 => '_js_init',
+  33 => '_css_files',
+  34 => '_layout',
+  35 => 'btn_extra',
+  36 => 'submit_confirm',
+  37 => 'extend_js_list',
+  38 => 'extend_css_list',
+  39 => '_method',
+  40 => 'empty_tips',
+  41 => '_token_name',
+  42 => '_token_value',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000874s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.010444s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.009049s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.008961s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.011603s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.012324s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.009509s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.010088s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = in [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY `sort`,`id` [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY `sort`,`id` [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/system/index' LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value`,`params` FROM `dp_admin_menu` [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1 ORDER BY `sort`,`id` [ RunTime:0.001816s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/system/index' LIMIT 1 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value`,`params` FROM `dp_admin_menu` [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_message` [ RunTime:0.008701s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dp_admin_message` WHERE  `status` = 0  AND `uid_receive` = 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_icon` [ RunTime:0.007758s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_icon` WHERE  `status` = 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT `value` FROM `dp_admin_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT `name`,`config`,`title` FROM `dp_admin_module` WHERE  `config` <> ''  AND `status` = 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`type`,`value`,`options`,`tips`,`ajax_url`,`next_items`,`param`,`format`,`table`,`level`,`key`,`option`,`pid`,`ak`,`create_time`,`update_time`,`sort`,`status` FROM `dp_admin_config` WHERE  `group` = 'base'  AND `status` = 1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_user` [ RunTime:0.008115s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.007908s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000280s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:15:33+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.194396s] [吞吐率：5.14req/s] [内存消耗：3,259.47kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590473633',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000915s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.019433s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.009169s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.009059s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.008148s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.009027s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.009628s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.008852s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.008469s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.009444s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.009202s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000505s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:15:45+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.181317s] [吞吐率：5.52req/s] [内存消耗：3,259.47kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590473734',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000965s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.008784s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.008793s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.011002s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.009743s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.009500s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.010775s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.009287s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.009358s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.008311s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.008812s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000484s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:16:18+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.188992s] [吞吐率：5.29req/s] [内存消耗：3,259.53kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590473745',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000861s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.011078s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.010461s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.009031s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.008970s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008706s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.009300s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.008765s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.008553s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.008715s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.009327s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000481s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:19:34+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.183955s] [吞吐率：5.44req/s] [内存消耗：3,259.84kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590473779',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001799s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.013739s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.009484s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.010671s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.009036s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.009359s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.010558s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.009339s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.009130s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.010498s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.009935s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000595s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:21:42+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.184718s] [吞吐率：5.41req/s] [内存消耗：3,259.50kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590473976',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001022s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.011562s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.009046s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.009364s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.009475s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008673s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.008880s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.008720s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.009054s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.008607s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000482s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:21:55+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.192544s] [吞吐率：5.19req/s] [内存消耗：3,259.52kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590474103',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001683s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.012137s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.009098s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.012074s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.011972s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008987s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.009206s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.009711s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.009341s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.008409s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.009776s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000467s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:35:27+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.196526s] [吞吐率：5.09req/s] [内存消耗：3,259.55kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590474117',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002616s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.021639s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.009723s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.010062s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.009062s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008570s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.009221s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.008569s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.001977s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.009278s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.009506s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.009184s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000533s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:35:46+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.171202s] [吞吐率：5.84req/s] [内存消耗：3,259.85kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590474928',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000905s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.010209s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.009078s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.009145s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.008618s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008162s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.007851s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.009462s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.008597s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.008455s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.009714s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000496s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:36:00+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.189451s] [吞吐率：5.28req/s] [内存消耗：3,259.53kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590474947',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000819s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.010681s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.010131s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.011650s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.012066s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.011121s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.009911s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.008130s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.007761s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.008258s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.008863s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000585s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:38:02+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.193033s] [吞吐率：5.18req/s] [内存消耗：3,259.42kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590474961',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001014s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.013528s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.014890s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.009345s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.009115s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.009198s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.009984s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.008526s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.008974s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.008040s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.008757s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:39:05+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.190334s] [吞吐率：5.25req/s] [内存消耗：3,259.83kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590475083',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000902s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.022180s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.009095s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.009067s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.008809s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008731s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.008796s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.008536s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.008649s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.008299s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.008530s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000460s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:41:48+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.379008s] [吞吐率：2.64req/s] [内存消耗：3,264.27kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590475146',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001870s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.011416s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.009231s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.013585s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.009149s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008935s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.008756s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.014654s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.001366s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.001055s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.044751s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.089067s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.060978s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.001036s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:44:42+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.199354s] [吞吐率：5.02req/s] [内存消耗：3,259.84kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590475309',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000862s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.013295s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.011320s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.009583s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.007899s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.007928s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.008898s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.008390s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.009267s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.025583s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.008796s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000830s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:45:14+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.176878s] [吞吐率：5.65req/s] [内存消耗：3,259.84kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590475483',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000934s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.010984s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.008855s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.008716s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.010786s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008305s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.008784s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.008017s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.009055s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.008554s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.008432s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000503s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:54:02+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.170662s] [吞吐率：5.86req/s] [内存消耗：3,263.90kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590475515',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001729s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.011399s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.008235s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.007808s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.008466s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008007s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.009619s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.001559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.009315s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.008640s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.008454s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.008743s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000494s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:54:19+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.191898s] [吞吐率：5.21req/s] [内存消耗：3,264.30kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590476044',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000927s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.010707s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.009080s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.012469s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.009411s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.014975s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.008918s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.015681s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.008066s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.008725s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.008910s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000455s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:54:37+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.170517s] [吞吐率：5.86req/s] [内存消耗：3,264.00kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590476060',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000925s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.010526s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.008070s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.008619s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.008687s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008810s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.008913s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.010606s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.008416s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.008715s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000555s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:54:47+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.176164s] [吞吐率：5.68req/s] [内存消耗：3,264.00kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590476078',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001757s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.010815s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.009644s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.008499s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.009651s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.009024s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.008873s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.008927s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.008333s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.007847s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.013210s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000747s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:57:27+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.196200s] [吞吐率：5.10req/s] [内存消耗：3,264.02kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590476088',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000995s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.009369s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.017475s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.011165s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.011444s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.009190s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.009057s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.013907s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.001981s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.009060s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.008453s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.009356s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000489s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:57:49+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.183948s] [吞吐率：5.44req/s] [内存消耗：3,264.30kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590476248',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001160s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.014884s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.010299s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.008783s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.008145s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.007817s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.007708s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.007868s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.007886s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.007972s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.008265s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000405s ]
+---------------------------------------------------------------
+
+[2020-05-26T14:57:51+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.177902s] [吞吐率：5.62req/s] [内存消耗：3,126.38kb] [文件加载：106]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590476270',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000938s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.011202s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.008696s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.013368s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.008938s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008057s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.008415s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.008896s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.008527s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.009253s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.010570s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000474s ]
+---------------------------------------------------------------
+
+[2020-05-26T15:01:21+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.202681s] [吞吐率：4.93req/s] [内存消耗：3,264.02kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590476273',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001942s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.017050s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.009059s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.009377s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.009571s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.015697s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.011840s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.004185s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.009869s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.002241s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.009653s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.009135s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.009081s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000493s ]
+---------------------------------------------------------------
+
+[2020-05-26T15:01:45+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.179512s] [吞吐率：5.57req/s] [内存消耗：3,264.00kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590476482',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001072s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.010620s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.018328s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.008656s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.010749s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008775s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.008428s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.008185s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.009188s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.008176s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.008559s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000409s ]
+---------------------------------------------------------------
+
+[2020-05-26T15:03:04+08:00] 127.0.0.1 POST eshop.com/admin.php/admin/ajax/getsidebarmenu.html
+[运行时间：0.144436s] [吞吐率：6.92req/s] [内存消耗：3,224.41kb] [文件加载：105]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590476507',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://eshop.com/admin.php/admin/system/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://eshop.com',
+  'accept' => '*/*',
+  'content-length' => '41',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+  'module_id' => '1',
+  'module' => 'admin',
+  'controller' => 'index',
+)
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000995s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.010558s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.008557s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.008287s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.008171s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008127s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.008969s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.008835s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = in [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value`,`params` FROM `dp_admin_menu` [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1 ORDER BY `sort`,`id` [ RunTime:0.001373s ]
+---------------------------------------------------------------
+
+[2020-05-26T15:03:04+08:00] 127.0.0.1 GET eshop.com/admin.php/admin/index/index.html
+[运行时间：0.300606s] [吞吐率：3.33req/s] [内存消耗：3,433.60kb] [文件加载：118]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590476507',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://eshop.com/admin.php/admin/system/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\admin\view\index\index.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => '_message',
+  8 => '_icons',
+  9 => 'aside',
+  10 => 'default_pass',
+) ]
+[ info ] [ VIEW ] G:\php_document\1shop\code\plugins/SystemInfo/view/widget.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => '_message',
+  8 => '_icons',
+  9 => 'aside',
+  10 => 'default_pass',
+  11 => 'display',
+  12 => 'width',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\php_document\1shop\code\plugins/DevTeam/view/widget.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => '_message',
+  8 => '_icons',
+  9 => 'aside',
+  10 => 'default_pass',
+  11 => 'display',
+  12 => 'width',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000893s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.012279s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.017487s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.009068s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.007836s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008790s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.008586s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.008758s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = in [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY `sort`,`id` [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY `sort`,`id` [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/index/index' LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value`,`params` FROM `dp_admin_menu` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1 ORDER BY `sort`,`id` [ RunTime:0.004568s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/index/index' LIMIT 1 [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value`,`params` FROM `dp_admin_menu` [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_message` [ RunTime:0.008973s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dp_admin_message` WHERE  `status` = 0  AND `uid_receive` = 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_icon` [ RunTime:0.008999s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_icon` WHERE  `status` = 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT `value` FROM `dp_admin_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_user` [ RunTime:0.010846s ]
+[ sql ] [ SQL ] SELECT `password` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.017505s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT `config` FROM `dp_admin_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.000506s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000759s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] select version() as version [ RunTime:0.008285s ]
+[ sql ] [ SQL ] SELECT `config` FROM `dp_admin_plugin` WHERE  `name` = 'DevTeam' LIMIT 1 [ RunTime:0.000450s ]
+---------------------------------------------------------------
+
+[2020-05-26T15:03:05+08:00] 127.0.0.1 GET eshop.com/admin.php/admin/index/checkupdate.html
+[运行时间：0.510605s] [吞吐率：1.96req/s] [内存消耗：3,176.40kb] [文件加载：102]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590476507',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://eshop.com/admin.php/admin/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000849s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.012741s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.009622s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.010692s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.011191s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.009730s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.010879s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.025013s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = in [ RunTime:0.000560s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001187s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] select version() as version [ RunTime:0.000363s ]
+---------------------------------------------------------------
+
+[2020-05-26T15:03:44+08:00] 127.0.0.1 GET eshop.com/cms/index/address.html
+[运行时间：0.291221s] [吞吐率：3.43req/s] [内存消耗：3,266.76kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590476585',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://eshop.com/cms/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\address.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000921s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.017853s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.009558s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.008234s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.008272s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008291s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.008541s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.008591s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.008552s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.008467s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.010681s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000538s ]
+---------------------------------------------------------------
+
+[2020-05-26T15:04:52+08:00] 127.0.0.1 GET eshop.com/cms/Index/index.html
+[运行时间：0.524272s] [吞吐率：1.91req/s] [内存消耗：3,264.27kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590476626',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://eshop.com/cms/index/address.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010354s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.026042s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.001863s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.036158s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.023074s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.053145s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.014837s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.031090s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.012364s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.009010s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.010079s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.008883s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+
+[2020-05-26T15:05:58+08:00] 127.0.0.1 GET eshop.com/cms/Index/index.html
+[运行时间：0.171923s] [吞吐率：5.82req/s] [内存消耗：3,264.65kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590476694',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://eshop.com/cms/index/address.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000878s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.010889s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.008701s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.008692s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.008383s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.008528s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.008182s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.008431s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.008762s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.008694s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.008748s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000615s ]
+---------------------------------------------------------------
+
+[2020-05-26T15:21:30+08:00] 127.0.0.1 GET eshop.com/cms/Index/index.html
+[运行时间：0.233186s] [吞吐率：4.29req/s] [内存消耗：3,264.58kb] [文件加载：108]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590476760',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://eshop.com/cms/index/address.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012864s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.018135s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.011791s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.009985s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.010809s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.010526s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.010698s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.009675s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.009277s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.010632s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.009674s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000401s ]
+---------------------------------------------------------------
+
+[2020-05-26T15:22:36+08:00] 127.0.0.1 GET eshop.com/
+[运行时间：0.233222s] [吞吐率：4.29req/s] [内存消耗：3,027.50kb] [文件加载：101]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590477692',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001315s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.013513s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.009898s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.013290s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.015045s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.011986s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000479s ]
+---------------------------------------------------------------
+
+[2020-05-26T15:22:36+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.225363s] [吞吐率：4.44req/s] [内存消耗：3,126.09kb] [文件加载：106]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590477692',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001059s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.012620s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.011735s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.011072s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.010693s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.013620s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.011685s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.018738s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.010580s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.009645s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.009963s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000436s ]
+---------------------------------------------------------------
+
+[2020-05-26T15:25:55+08:00] 127.0.0.1 GET eshop.com/cms/index/index.html
+[运行时间：0.204639s] [吞吐率：4.89req/s] [内存消耗：3,126.38kb] [文件加载：106]
+[ info ] [ LANG ] G:\php_document\1shop\code\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_trs_uv=k9zc2onq_259_hmmq; dolphin_uid=1; dolphin_signin_token=dc27e9a48ef4a574c73b2dbf5fa3e58f92ada085; PHPSESSID=d7ii02k6n4gorci6jrvsdhcgh3; Hm_lvt_4e5bdf78b2b9fcb88736fc67709f2806=1590134868,1590214444,1590304257,1590472865; dolphin___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html; Hm_lpvt_4e5bdf78b2b9fcb88736fc67709f2806=1590477758',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3741.400 QQBrowser/10.5.3863.400',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'eshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] G:\php_document\1shop\code\application\cms\view\index\index.html [ array (
+  0 => 'main_nav',
+  1 => 'about_nav',
+  2 => 'support_nav',
+  3 => 'slider',
+  4 => 'support',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000861s ] mysql:host=127.0.0.1;port=3306;dbname=eshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.014609s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.014672s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.010104s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.010201s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.010928s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY `hook`,`sort` [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_nav` [ RunTime:0.009628s ]
+[ sql ] [ SQL ] SELECT `id`,`tag` FROM `dp_cms_nav` WHERE  `status` = 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.010119s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 1  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 2  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT `cms_menu`.*,cms_column.name AS column_name,cms_page.title AS page_title FROM `dp_cms_menu` `cms_menu` LEFT JOIN `dp_cms_column` `cms_column` ON `cms_menu`.`column`=`cms_column`.`id` LEFT JOIN `dp_cms_page` `cms_page` ON `cms_menu`.`page`=`cms_page`.`id` WHERE  `cms_menu`.`nid` = 3  AND `cms_menu`.`status` = 1 ORDER BY `cms_menu`.`sort`,`cms_menu`.`pid`,`cms_menu`.`id` [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_slider` [ RunTime:0.010087s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_slider` WHERE  `status` = 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_support` [ RunTime:0.010925s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_support` WHERE  `status` = 1 ORDER BY `sort` [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.010837s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000472s ]

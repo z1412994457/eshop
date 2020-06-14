@@ -1,4 +1,4 @@
-<?php /*a:2:{s:69:"G:\php_document\1shop\code\application\cms\view\products\details.html";i:1592018646;s:67:"G:\php_document\1shop\code\application\cms\view\public\layouti.html";i:1592026531;}*/ ?>
+<?php /*a:2:{s:78:"G:\php_document\1shop\code\application\cms\view\products\cupboard_details.html";i:1592018724;s:67:"G:\php_document\1shop\code\application\cms\view\public\layouti.html";i:1592019136;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,9 +14,25 @@
         margin-top: 2%;
         background-color: white;
     }
-    .p_introduce{
-        margin-bottom: 3%;
+    .info,img{
+        max-width: 100%;
+        height: auto;
+        vertical-align:middle;
+    }
+    @media screen and (max-width:768px ) {
+        .c_info{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            font-size: 13px;
 
+        }
+
+    }
+    .cupboard_introduce{
+        margin-bottom: 3%;
     }
 </style>
 
@@ -50,17 +66,6 @@
             bottom: 50%;
             position: absolute;
             display: none;
-
-        }
-
-        @media  screen and (max-width: 991px){
-            .show-erweima {
-                bottom: 50%;
-                position: absolute;
-                display: none;
-                width:50%;
-                left: 25%;
-            }
         }
 
         .footer {
@@ -70,52 +75,52 @@
     
 </head>
 <body>
-<!--页头-->
-<div class="header">
-    <div class="container h-nav">
-        <div class="row">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">
-                            <img class="n-log" src="<?php echo get_file_path(config('web_site_logo')); ?>">
-                        </a>
-                    </div>
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li><a href="<?php echo url('/cms/Index/index'); ?>">首页</a></li>
-                            <li><a href="<?php echo url('/cms/Products/cupboard'); ?>">橱柜</a></li>
-                            <li><a href="<?php echo url('/cms/Products/products'); ?>">产品中心</a></li>
-                            <li><a href="<?php echo url('/cms/index/address'); ?>">店铺地址</a></li>
-                        </ul>
-                        <form class="navbar-form navbar-left" action="<?php echo url('/cms/Index/search'); ?>" method="post">
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <input type="text" value="" class="form-control" name="keyw" placeholder="搜索 ">
-                                    <span class="input-group-btn">
+<div class="header">
+<div class="container h-nav">
+    <div class="row">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img class="n-log" src="<?php echo get_file_path(config('web_site_logo')); ?>">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="<?php echo url('/cms/Index/index'); ?>">首页</a></li>
+                        <li><a href="<?php echo url('/cms/Products/cupboard'); ?>">橱柜</a></li>
+                        <li><a href="<?php echo url('/cms/Products/products'); ?>">产品中心</a></li>
+                        <li><a href="<?php echo url('/cms/index/address'); ?>">店铺地址</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left" action="<?php echo url('/cms/Index/search'); ?>" method="post">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" value="" class="form-control" name="keyw" placeholder="搜索 ">
+                                <span class="input-group-btn">
                         <input class="btn btn-default" type="submit" value="搜索">
                     </span>
-                                </div><!-- /input-group -->
-                            </div>
+                            </div><!-- /input-group -->
+                        </div>
 
-                        </form>
+                    </form>
 
 
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav>
-        </div>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
     </div>
+</div>
 </div>
 <!--轮播图-->
 <div id="slidershow" class="carousel slide" data-ride="carousel" data-interval=2000 data-pause="hover" data-wrap="true"
@@ -153,56 +158,55 @@
         <div class="row">
             <ol class="breadcrumb">
                 <li><a href="/cms/Index/index">首页</a></li>
-                <li><a href="/cms/Products/products">产品中心</a></li>
-                <li><a href="#">产品详情</a></li>
-
+                <li><a href="/cms/Products/cupboard">橱柜</a></li>
+                <li><a href="#">橱柜详情</a></li>
             </ol>
         </div>
+
     </div>
 </div>
-<!--产品描述-->
-<div class="p_introduce" >
+<!--橱柜描述-->
+<div class="cupboard_introduce">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 text-center" style="height: 20%">
-                <img src="<?php echo get_file_path($info['imgs'][0]); ?>" atl="" style="width: 100%;"/>
-            </div>
-            <div class="col-md-6 text-center " style="margin-top:15%">
-                <h2><?php echo htmlentities($info['product_name']); ?></h2>
-                <div style="margin-top: 20px">
-                    <p><?php echo htmlentities($info['marking']); ?></p>
-                </div>
-                <p>参考价:￥<?php echo htmlentities($info['prize']); ?></p>
+            <div class="col-md-6 text-center">
+                <img src="<?php echo get_file_path($info['cupboard_img']); ?>" atl="" style="width: 100%;"/>
 
             </div>
+            <div class="col-md-6 text-center" style="margin-top:15%">
+                <h2><?php echo htmlentities($info['cupboard_name']); ?></h2>
+                <div style="margin-top: 20px">
+                    <p  class="c_info"><?php echo htmlentities($info['cupboard_description']); ?></p>
+                </div>
+            </div>
+
         </div>
     </div>
-
 </div>
+<!--面包屑导航-->
 <div class="container">
     <div class="row">
         <ul class="nav nav-tabs">
-            <li role="presentation" class="infop" onclick="infop()"><a href="javasript:;">产品介绍</a></li>
-            <li role="presentation" class="spectifictionsp"  onclick="spectifictionsp()"><a href="javasript:;">产品参数</a></li>
-            <li role="presentation" class="servicep" onclick="servicep()" ><a href="javasript:;">服务支持</a></li>
-            <li role="presentation" class="addressp" onclick="addressp()" ><a href="/cms/index/address">店铺地址</a></li>
+            <li role="presentation" class="infop" onclick="infop()"><a href="javasript:;">橱柜介绍</a></li>
+            <li role="presentation" class="spectifictionsp" onclick="spectifictionsp()"><a href="javasript:;">橱柜参数</a>
+            </li>
+            <li role="presentation" class="servicep" onclick="servicep()"><a href="javasript:;">服务支持</a></li>
         </ul>
     </div>
 </div>
-<!--产品介绍-->
+<!--橱柜介绍-->
 <div class="info"  style="width: 100%; margin-top: 50px">
         <div class="container">
             <div class="row">
-                <?php echo $info['info']; ?>
+                <?php echo $info['cupboard_info']; ?>
             </div>
         </div>
 
-    </div>
+</div>
 <!--产品参数-->
 <div class="spectifictions" style="display: none">
         <div class="container">
             <div class="row">
-                <?php echo $info['specifications']; ?>
             </div>
         </div>
     </div>
@@ -210,12 +214,9 @@
 <div class="service" style="display: none">
         <div class="container">
             <div class="row">
-                <?php echo $info['surppot']; ?>
             </div>
         </div>
     </div>
-
-
 
 
 
@@ -255,7 +256,7 @@
                 <div class="show-erweima"><img src="/static/home/img/erweima.jpg" class="img-responsive"
                                                alt="Responsive image"/></div>
                 <h6>关注我们</h6>
-                <a href="##" class="erweima "><img src="/static/home/img/wei.png"/></a>
+                <a href="##" class="erweima"><img src="/static/home/img/wei.png"/></a>
             </div>
             <div class="col-md-3">
                 <h6>店铺地址</h6>
@@ -295,30 +296,30 @@
 
 <script>
     function infop() {
-        $('.info').css('display','block');
-        $('.spectifictions').css('display','none');
-        $('.service').css('display','none');
-        $('.address').css('display','none');
+        $('.info').css('display', 'block');
+        $('.spectifictions').css('display', 'none');
+        $('.service').css('display', 'none');
+        $('.address').css('display', 'none');
 
     }
 
     function spectifictionsp() {
-        $('.info').css('display','none');
-        $('.spectifictions').css('display','block');
-        $('.service').css('display','none');
-        $('.address').css('display','none');
+        $('.info').css('display', 'none');
+        $('.spectifictions').css('display', 'block');
+        $('.service').css('display', 'none');
+        $('.address').css('display', 'none');
 
     }
+
     function servicep() {
-        $('.info').css('display','none');
-        $('.spectifictions').css('display','none');
-        $('.service').css('display','block');
-        $('.address').css('display','none');
+        $('.info').css('display', 'none');
+        $('.spectifictions').css('display', 'none');
+        $('.service').css('display', 'block');
+        $('.address').css('display', 'none');
     }
 
 </script>
 
-<script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=kPU2UIQc9LGMWl0VPBaiHD44QVmZjwIL"></script>
 
 
 

@@ -1,34 +1,41 @@
 {extend name="public:layouti" /}
 {block name="style"}
+<style>
+    .breadcrumb {
+        margin-top: 2%;
+        background-color: white;
+    }
+    .p_introduce{
+        margin-bottom: 3%;
 
+    }
+</style>
 {/block}
 
 
 
 {block name="main-container"}
+<!--面包屑导航-->
+<div class="nav">
+    <div class="container">
+        <div class="row">
+            <ol class="breadcrumb">
+                <li><a href="/cms/Index/index">首页</a></li>
+                <li><a href="/cms/Products/products">产品中心</a></li>
+                <li><a href="#">产品详情</a></li>
 
-
-    <ol class="breadcrumb">
-        <li><a href="/cms/Index/index">首页</a></li>
-        <li><a href="/cms/Products/products">产品中心</a></li>
-        <li><a href="#">产品详情</a></li>
-
-    </ol>
-
-    <div class="row">
-        <div class="jumbotron" style="display: table" >
-            <div style="text-align: center; width: 48%; display: table-cell; ">
-                <!--<ol class="breadcrumb">-->
-                    <!--<li><a href="#">首页</a></li>-->
-                    <!--<li><a href="#">产品中心</a></li>-->
-                    <!--<li><a href="#">产品详情</a></li>-->
-
-                <!--</ol>-->
+            </ol>
+        </div>
+    </div>
+</div>
+<!--产品描述-->
+<div class="p_introduce" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center" style="height: 20%">
                 <img src="{:get_file_path($info['imgs'][0])}" atl="" style="width: 100%;"/>
-
             </div>
-            <div style="text-align: center;width:48%;display: table-cell;">
-
+            <div class="col-md-6 text-center " style="margin-top:15%">
                 <h2>{$info['product_name']}</h2>
                 <div style="margin-top: 20px">
                     <p>{$info['marking']}</p>
@@ -36,36 +43,49 @@
                 <p>参考价:￥{$info['prize']}</p>
 
             </div>
-
-
         </div>
-
-        <div>
-            <ul class="nav nav-tabs">
-                <li role="presentation" class="infop" onclick="infop()"><a href="javasript:;">产品介绍</a></li>
-                <li role="presentation" class="spectifictionsp"  onclick="spectifictionsp()"><a href="javasript:;">产品参数</a></li>
-                <li role="presentation" class="servicep" onclick="servicep()" ><a href="javasript:;">服务支持</a></li>
-                <li role="presentation" class="addressp" onclick="addressp()" ><a href="/cms/index/address">店铺地址</a></li>
-            </ul>
-        </div>
-        <!--产品介绍-->
-        <div class="" style="width: 100%; margin-top: 50px">
-            <div class="info">
-                {$info['info'] |raw}
-
-            </div>
-        <!--产品参数-->
-            <div class="spectifictions" style="display: none">
-            {$info['specifications'] |raw}
-             </div>
-        <!--服务支持-->
-        <div class="service" style="display: none">
-            {$info['surppot'] |raw}
-        </div>
-
     </div>
 
 </div>
+<div class="container">
+    <div class="row">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="infop" onclick="infop()"><a href="javasript:;">产品介绍</a></li>
+            <li role="presentation" class="spectifictionsp"  onclick="spectifictionsp()"><a href="javasript:;">产品参数</a></li>
+            <li role="presentation" class="servicep" onclick="servicep()" ><a href="javasript:;">服务支持</a></li>
+            <li role="presentation" class="addressp" onclick="addressp()" ><a href="/cms/index/address">店铺地址</a></li>
+        </ul>
+    </div>
+</div>
+<!--产品介绍-->
+<div class="info"  style="width: 100%; margin-top: 50px">
+        <div class="container">
+            <div class="row">
+                {$info['info'] |raw}
+            </div>
+        </div>
+
+    </div>
+<!--产品参数-->
+<div class="spectifictions" style="display: none">
+        <div class="container">
+            <div class="row">
+                {$info['specifications'] |raw}
+            </div>
+        </div>
+    </div>
+<!--服务支持-->
+<div class="service" style="display: none">
+        <div class="container">
+            <div class="row">
+                {$info['surppot'] |raw}
+            </div>
+        </div>
+    </div>
+
+
+
+
 
 
 <!--<p>百度地图收索:海尔热水器厨房电器(郫县犀浦店)</p>-->

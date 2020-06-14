@@ -1,13 +1,26 @@
 {extend name="public:layouti" /}
-{block name="style"}{/block}
+{block name="style"}
+<style>
+    .breadcrumb {
+        margin-top: 2%;
+        background-color: white;
+    }
+</style>
+{/block}
 {block name="main-container"}
-
-    <ol class="breadcrumb">
-        <li><a href="/cms/Index/index">首页</a></li>
-        <li><a href="#">店铺地址</a></li>
-    </ol>
-
-    <div class="address jumbotron" id="container" style="width: 100%; height: 500px"></div>
+<!--面包屑导航-->
+<div class="nav">
+    <div class="container">
+        <div class="row">
+            <ol class="breadcrumb">
+                <li><a href="/cms/Index/index">首页</a></li>
+                <li><a href="#">店铺地址</a></li>
+            </ol>
+        </div>
+    </div>
+</div>
+<!--百度地图-->
+<div class="address jumbotron" id="container" style="width: 100%; height: 500px"></div>
 
 {/block}
 {block name="script"}
