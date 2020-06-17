@@ -1,4 +1,4 @@
-<?php /*a:2:{s:70:"G:\php_document\1shop\code\application\cms\view\products\cupboard.html";i:1592020649;s:67:"G:\php_document\1shop\code\application\cms\view\public\layouti.html";i:1592019173;}*/ ?>
+<?php /*a:2:{s:70:"G:\php_document\1shop\code\application\cms\view\products\cupboard.html";i:1592020649;s:67:"G:\php_document\1shop\code\application\cms\view\public\layouti.html";i:1592026531;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,6 +63,17 @@
             bottom: 50%;
             position: absolute;
             display: none;
+
+        }
+
+        @media  screen and (max-width: 991px){
+            .show-erweima {
+                bottom: 50%;
+                position: absolute;
+                display: none;
+                width:50%;
+                left: 25%;
+            }
         }
 
         .footer {
@@ -249,7 +260,7 @@
                 <div class="show-erweima"><img src="/static/home/img/erweima.jpg" class="img-responsive"
                                                alt="Responsive image"/></div>
                 <h6>关注我们</h6>
-                <a href="##" class="erweima"><img src="/static/home/img/wei.png"/></a>
+                <a href="##" class="erweima "><img src="/static/home/img/wei.png"/></a>
             </div>
             <div class="col-md-3">
                 <h6>店铺地址</h6>

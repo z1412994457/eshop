@@ -1,4 +1,4 @@
-<?php /*a:2:{s:78:"G:\php_document\1shop\code\application\cms\view\products\cupboard_details.html";i:1592018724;s:67:"G:\php_document\1shop\code\application\cms\view\public\layouti.html";i:1592019136;}*/ ?>
+<?php /*a:2:{s:78:"G:\php_document\1shop\code\application\cms\view\products\cupboard_details.html";i:1592020698;s:67:"G:\php_document\1shop\code\application\cms\view\public\layouti.html";i:1592026531;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +27,6 @@
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             font-size: 13px;
-
         }
 
     }
@@ -66,6 +65,17 @@
             bottom: 50%;
             position: absolute;
             display: none;
+
+        }
+
+        @media  screen and (max-width: 991px){
+            .show-erweima {
+                bottom: 50%;
+                position: absolute;
+                display: none;
+                width:50%;
+                left: 25%;
+            }
         }
 
         .footer {
@@ -75,52 +85,52 @@
     
 </head>
 <body>
-
+<!--页头-->
 <div class="header">
-<div class="container h-nav">
-    <div class="row">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <img class="n-log" src="<?php echo get_file_path(config('web_site_logo')); ?>">
-                    </a>
-                </div>
+    <div class="container h-nav">
+        <div class="row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img class="n-log" src="<?php echo get_file_path(config('web_site_logo')); ?>">
+                        </a>
+                    </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="<?php echo url('/cms/Index/index'); ?>">首页</a></li>
-                        <li><a href="<?php echo url('/cms/Products/cupboard'); ?>">橱柜</a></li>
-                        <li><a href="<?php echo url('/cms/Products/products'); ?>">产品中心</a></li>
-                        <li><a href="<?php echo url('/cms/index/address'); ?>">店铺地址</a></li>
-                    </ul>
-                    <form class="navbar-form navbar-left" action="<?php echo url('/cms/Index/search'); ?>" method="post">
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="text" value="" class="form-control" name="keyw" placeholder="搜索 ">
-                                <span class="input-group-btn">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="<?php echo url('/cms/Index/index'); ?>">首页</a></li>
+                            <li><a href="<?php echo url('/cms/Products/cupboard'); ?>">橱柜</a></li>
+                            <li><a href="<?php echo url('/cms/Products/products'); ?>">产品中心</a></li>
+                            <li><a href="<?php echo url('/cms/index/address'); ?>">店铺地址</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-left" action="<?php echo url('/cms/Index/search'); ?>" method="post">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" value="" class="form-control" name="keyw" placeholder="搜索 ">
+                                    <span class="input-group-btn">
                         <input class="btn btn-default" type="submit" value="搜索">
                     </span>
-                            </div><!-- /input-group -->
-                        </div>
+                                </div><!-- /input-group -->
+                            </div>
 
-                    </form>
+                        </form>
 
 
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
     </div>
-</div>
 </div>
 <!--轮播图-->
 <div id="slidershow" class="carousel slide" data-ride="carousel" data-interval=2000 data-pause="hover" data-wrap="true"
@@ -256,7 +266,7 @@
                 <div class="show-erweima"><img src="/static/home/img/erweima.jpg" class="img-responsive"
                                                alt="Responsive image"/></div>
                 <h6>关注我们</h6>
-                <a href="##" class="erweima"><img src="/static/home/img/wei.png"/></a>
+                <a href="##" class="erweima "><img src="/static/home/img/wei.png"/></a>
             </div>
             <div class="col-md-3">
                 <h6>店铺地址</h6>
